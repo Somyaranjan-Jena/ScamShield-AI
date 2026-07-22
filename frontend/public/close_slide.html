@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ScamShield AI — Closing</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #060913;
+      color: #e2e8f0;
+      font-family: system-ui, -apple-system, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      max-width: 900px;
+      padding: 2rem;
+      position: relative;
+    }
+    .text-slide-1 {
+      opacity: 0;
+      animation: fadeInOut 6s forwards 0.5s;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    .text-slide-2 {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards 6.5s;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translate(-50%, -40%); }
+      20% { opacity: 1; transform: translate(-50%, -50%); }
+      80% { opacity: 1; transform: translate(-50%, -50%); }
+      100% { opacity: 0; transform: translate(-50%, -60%); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translate(-50%, -40%) scale(0.95); }
+      100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .stat-text {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #f8fafc;
+      line-height: 1.5;
+    }
+    .stat-highlight {
+      color: #38bdf8;
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+    .logo-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .shield-icon {
+      font-size: 5rem;
+      filter: drop-shadow(0 0 30px rgba(34, 211, 238, 0.6));
+    }
+    .brand-name {
+      font-size: 3.5rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .repo-url {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      font-family: monospace;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-slide-1">
+      <h1 class="stat-text">
+        <span class="stat-highlight">1.14 million</span> cybercrime complaints.<br/>
+        <span class="stat-highlight">Rs 1,776 crore</span> stolen.
+      </h1>
+    </div>
+    <div class="text-slide-2">
+      <div class="logo-box">
+        <div class="shield-icon">🛡️</div>
+        <div class="brand-name">ScamShield AI</div>
+        <div class="repo-url">github.com/Somyaranjan-Jena/ScamShield-AI</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

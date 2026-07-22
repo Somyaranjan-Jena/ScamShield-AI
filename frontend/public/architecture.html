@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ScamShield AI — Architecture Overview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #060913;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 1.25rem;
+      padding: 1.75rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .card-icon {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 0.75rem;
+    }
+    .card-list {
+      list-style: none;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .card-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card-list li::before {
+      content: "•";
+      color: #38bdf8;
+      font-weight: bold;
+    }
+    .flow-banner {
+      margin-top: 3rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      color: #38bdf8;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>System Architecture Overview</h1>
+    <p>Decoupled, Low-Latency, Multi-Model Public Safety Platform</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-icon">💻</div>
+      <div class="card-title">Frontend Layer</div>
+      <ul class="card-list">
+        <li>Next.js 14 App Router</li>
+        <li>React 18 & TypeScript</li>
+        <li>Tailwind CSS Glassmorphism</li>
+        <li>Hand-crafted SVG Charts</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <div class="card-title">Backend Service</div>
+      <ul class="card-list">
+        <li>Python FastAPI Engine</li>
+        <li>Uvicorn ASGI Server</li>
+        <li>WebSocket Streaming</li>
+        <li>Rate Limiter Middleware</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🧠</div>
+      <div class="card-title">AI Pipeline</div>
+      <ul class="card-list">
+        <li>Google Gemini 1.5 Pro</li>
+        <li>HuggingFace Inference</li>
+        <li>Deterministic Fallback</li>
+        <li>VirusTotal Threat Intel</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🐳</div>
+      <div class="card-title">Infrastructure</div>
+      <ul class="card-list">
+        <li>Docker & Compose</li>
+        <li>PostgreSQL Storage</li>
+        <li>Redis Caching</li>
+        <li>Vercel / Render Ready</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flow-banner">
+    CLIENT WEBSOCKET ──► FASTAPI SCAM ANALYZER ──► MULTI-MODEL INFERENCE ──► REAL-TIME VERDICT
+  </div>
+</body>
+</html>

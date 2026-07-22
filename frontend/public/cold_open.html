@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ScamShield AI — Cold Open</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #060913;
+      color: #e2e8f0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      max-width: 900px;
+      padding: 2rem;
+      position: relative;
+    }
+    .text-slide {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slide-1 { animation: fadeInOut 6s forwards 0.5s; }
+    .slide-2 { animation: fadeInOut 6s forwards 7s; }
+    .slide-3 { animation: fadeIn 1.5s forwards 13.5s; }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translate(-50%, -40%); }
+      20% { opacity: 1; transform: translate(-50%, -50%); }
+      80% { opacity: 1; transform: translate(-50%, -50%); }
+      100% { opacity: 0; transform: translate(-50%, -60%); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translate(-50%, -40%) scale(0.95); }
+      100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .stat-text {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #f8fafc;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+    .stat-highlight {
+      color: #38bdf8;
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+    .logo-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .shield-icon {
+      font-size: 5rem;
+      filter: drop-shadow(0 0 30px rgba(34, 211, 238, 0.6));
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .brand-name {
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .brand-tagline {
+      font-size: 1.4rem;
+      color: #94a3b8;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-slide slide-1">
+      <h1 class="stat-text"><span class="stat-highlight">1.14 million</span> cybercrime complaints. India. 2023 alone.</h1>
+    </div>
+    <div class="text-slide slide-2">
+      <h1 class="stat-text"><span class="stat-highlight">Rs 1,776 crore</span> stolen through digital arrest scams in 9 months.</h1>
+    </div>
+    <div class="text-slide slide-3">
+      <div class="logo-box">
+        <div class="shield-icon">🛡️</div>
+        <div class="brand-name">ScamShield AI</div>
+        <div class="brand-tagline">Digital Public Safety Intelligence</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

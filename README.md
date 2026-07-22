@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <a href="https://suryanshsugara.github.io/scamshield-ai/">🌐 <strong>Live Web App Deployment</strong>: https://suryanshsugara.github.io/scamshield-ai/</a>
+  <a href="https://scamshield-ai-woad.vercel.app">🌐 <strong>Live Web App Deployment</strong>: https://scamshield-ai-woad.vercel.app</a>
 </p>
 
 <p align="center">
