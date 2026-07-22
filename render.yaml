@@ -1,0 +1,37 @@
+services:
+  # ── FastAPI Backend Service ────────────────────────────────────
+  - type: web
+    name: scamshield-backend
+    env: python
+    region: singapore
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: HOST
+        value: 0.0.0.0
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "60"
+
+  # ── Next.js Frontend Service ───────────────────────────────────
+  - type: web
+    name: scamshield-frontend
+    env: node
+    region: singapore
+    plan: free
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: "18.18.0"
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: scamshield-backend
+          property: url
