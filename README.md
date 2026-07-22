@@ -16,8 +16,12 @@
   <img src="https://img.shields.io/badge/Python-3.9+-3776ab?style=flat-square&logo=python" alt="Python" />
   <img src="https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/WebSocket-Real--time-ff6b6b?style=flat-square&logo=socketdotio" alt="WebSocket" />
-  <img src="https://img.shields.io/badge/Docker-Ready-2496ed?style=flat-square&logo=docker" alt="Docker" />
+  <img src="https://img.shields.io/badge/Deployment-Live-success?style=flat-square&logo=githubpages" alt="Deployment Live" />
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="MIT License" />
+</p>
+
+<p align="center">
+  <a href="https://somyaranjan-jena.github.io/ScamShield-AI/">🌐 <strong>Live App Deployment</strong>: https://somyaranjan-jena.github.io/ScamShield-AI/</a>
 </p>
 
 <p align="center">
