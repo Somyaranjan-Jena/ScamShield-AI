@@ -1,0 +1,35 @@
+{
+  "name": "ScamShield AI",
+  "short_name": "ScamShield",
+  "description": "AI-powered real-time protection against digital scams — usable offline",
+  "start_url": "/citizen-shield",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#22d3ee",
+  "orientation": "portrait-primary",
+  "categories": ["security", "utilities", "education"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0e1a' rx='20'/><text y='.9em' font-size='75' x='12'>🛡️</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Check Suspicious Message",
+      "short_name": "Check",
+      "url": "/citizen-shield",
+      "description": "Instantly check any suspicious message"
+    },
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "url": "/dashboard",
+      "description": "View fraud intelligence dashboard"
+    }
+  ]
+}
