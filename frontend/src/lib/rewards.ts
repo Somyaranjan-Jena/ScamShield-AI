@@ -71,9 +71,9 @@ function saveRewards(r: Rewards) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(r));
 }
 
-export function addPoints(action: string): Rewards {
+export function addPoints(action: string, customAmount?: number): Rewards {
   const r = getRewards();
-  const pts = POINT_VALUES[action] || 5;
+  const pts = customAmount !== undefined ? customAmount : (POINT_VALUES[action] || 5);
   r.points += pts;
   r.tier = computeTier(r.points);
 
