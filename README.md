@@ -16,22 +16,12 @@
   <img src="https://img.shields.io/badge/Python-3.9+-3776ab?style=flat-square&logo=python" alt="Python" />
   <img src="https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/WebSocket-Real--time-ff6b6b?style=flat-square&logo=socketdotio" alt="WebSocket" />
-  <img src="https://img.shields.io/badge/Deployment-Live-success?style=flat-square&logo=githubpages" alt="Deployment Live" />
+  <img src="https://img.shields.io/badge/Deployment-Live-success?style=flat-square&logo=vercel" alt="Deployment Live" />
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="MIT License" />
 </p>
 
 <p align="center">
   <a href="https://scamshield-ai-woad.vercel.app">🌐 <strong>Live Web App Deployment</strong>: https://scamshield-ai-woad.vercel.app</a>
-</p>
-
-<p align="center">
-  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsuryanshsugara%2Fscamshield-ai&root-directory=frontend">
-    <img src="https://vercel.com/button" alt="Deploy with Vercel"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://render.com/deploy?repo=https://github.com/suryanshsugara/scamshield-ai">
-    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"/>
-  </a>
 </p>
 
 <p align="center">
