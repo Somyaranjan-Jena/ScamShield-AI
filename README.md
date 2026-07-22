@@ -21,7 +21,17 @@
 </p>
 
 <p align="center">
-  <a href="https://somyaranjan-jena.github.io/ScamShield-AI/">🌐 <strong>Live App Deployment</strong>: https://somyaranjan-jena.github.io/ScamShield-AI/</a>
+  <a href="https://somyaranjan-jena.github.io/ScamShield-AI/">🌐 <strong>Live GitHub Pages Demo</strong>: https://somyaranjan-jena.github.io/ScamShield-AI/</a>
+</p>
+
+<p align="center">
+  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSomyaranjan-Jena%2FScamShield-AI&root-directory=frontend">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://render.com/deploy?repo=https://github.com/Somyaranjan-Jena/ScamShield-AI">
+    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"/>
+  </a>
 </p>
 
 <p align="center">
